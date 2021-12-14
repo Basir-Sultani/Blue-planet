@@ -1,0 +1,511 @@
+
+body  {
+	margin: 0px;
+	padding: 0px;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lato' !important;
+  min-height: 100vh;
+} 
+*{
+  /* the padding and border are included in the total width and height of the elements. */
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #4c4b4b;
+  font-family: 'lato', arial;
+  font-weight: 700px;
+  margin-bottom: 50px;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  /* overflow: hidden; */
+  
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  top: 0;
+  border-bottom: 0.1px solid rgb(214, 213, 213);  
+  z-index:1;
+}
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  .topnav > a.navbar-brand{
+    border-bottom: 2px solid transparent;
+      font-size:large;
+      display: inline;
+  }
+  .topnav > a.navbar-brand:hover {
+    border-bottom: 3px solid transparent;
+    color: rgb(211, 207, 207);
+  }
+
+   /* Change the color of links on hover */
+   .topnav > .nav-menu a:hover {
+    /* border-radius: 50px; */
+    border-bottom: 3px solid rgb(255, 255, 255);
+    /* border-color: rgb(255, 255, 255); */
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav > a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav>.nav-toggle {
+    display: none;
+  }
+  .bg-img {
+    /* The image used */
+    background-image: url("pexels-kasuma.jpg");
+    min-height: 500px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .background{
+    background: rgb(0, 0, 0, 0.8);
+    /* background: rgb(0, 0, 0, 0.3) url('pexels-kasuma.jpg'); */
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  #nav-placeholder{
+    display: block;
+    margin: 5rem;
+  }
+  .bg-img-contact{
+    background-image: url("Photos/pexels-photo.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20em;
+  }
+  .bg-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .bottom-center-toggler{
+    text-align: center;
+    padding-top: 15em;
+  }
+  .bottom-center-toggler a{
+    font-size: 50px;
+    color: #fff;
+  }
+
+  /* .search-box */
+    .search-box{
+    float: right;
+    width: fit-content;
+    height: fit-content;
+    /* position: relative; */
+    }
+    .input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 14px 16px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: transparent;
+    padding-right: 40px;
+    color:#fff;
+    }
+    .input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    }
+    .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+    }
+    .btn-search:hover{
+      color: rgb(211, 207, 207);
+    }
+    .btn-search:focus ~ .input-search{
+    width: 200px;
+    border-radius: 0px;
+    background-color: transparent;
+    /* border-bottom:1px solid rgba(255,255,255,.5); */
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    }
+    .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    }
+  
+.nvColor{
+  transition: all 0.7s;
+  background: #1976d2;
+}
+
+
+  .columnCards{
+    display: block;
+    margin: 1rem auto;
+    margin-top: -3rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .columnCards> .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Float three columns side by side */
+  .columnCards > .cards > .column{
+    /* float: left; */
+    width: 30%;
+    margin: 0.8rem;
+    display: inline-flex;
+  }
+  #middleCard{
+    margin: 0.8rem 0px;
+  }
+  /* Clear floats after the columns */
+  .columnCards:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /* Style the counter cards */
+  .card {
+    position: relative;
+    display: grid;
+    min-width: 0;
+    padding: 0.1rem;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+  }
+  .card .card-img-top {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    width: 100%;
+  }
+  .card .card-body{
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+  }
+  .card .card-title {
+    margin-bottom: .5rem;
+    margin-top: 0;
+    line-height: 1.2;
+  }
+  /* Making the whole card clickable */
+  .fullclick a.main {
+    text-decoration: none;
+    color: black;
+  }
+  .card .footer{
+    text-align: center;
+    color: #1976d2;
+  }
+  .card > .like-btn{
+    /* Center horizontally*/
+    /* display: flex;
+    justify-content: center; */
+    
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+    color: #4c4b4b;
+  }
+  .card .like-btn:hover{
+    color: red;
+  }
+
+  .date{
+    text-transform: uppercase;
+    color: #1976d2;
+    letter-spacing: 0.2rem;
+  }
+  
+  .container{
+    display:block;
+    margin:20px auto;
+  }
+  .post {
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid #bdc3c7;
+    border-left: 5px solid #bdc3c7;
+    padding:0.5rem;
+    margin: auto;
+    width: 75%;
+  }
+  .leftBorder{
+    border-left: 3px solid #1976d2;
+    padding-left: 5px;
+  }
+  hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  }
+  .container a{
+    text-decoration: none;
+  }
+
+#contact{
+  background-image: url('photos/coast.jpg');
+}
+  .contact form{
+    text-align: center;
+  }
+  .contact > .container{
+    margin: 2em;
+    padding: 3em;
+    margin-bottom: 0;
+  }
+  .contact form h3{
+    padding-right: 3.8em;
+    margin: 0;
+    color: #fff;
+  }
+  .contact input, textarea{
+    background-color: rgba(214, 214, 214, 0.801);
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .contact input{
+    border-bottom: 2px solid #fff;
+  }
+.about .img-right-post{
+  margin: 2em;
+  display: flex;
+  }
+  .about .img-right-post .left{
+    padding: 0.5em;
+    float: left;
+  } 
+  .about .img-right-post .left h4{
+    margin: 0;
+  }
+  
+  .about .img-right-post .right-img{
+    width: 20em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    
+  } 
+
+.end-footer> .footer-top{
+    background-color: #1976d2;
+    color: #fff;
+    float: left;
+    width: 100%;
+    height: 70px;
+  }
+  .end-footer> .footer-top a{
+    padding: 17px 40px 0 0;
+    color: #fff;
+    float: right;
+    font-size: 26px;
+    background-color: transparent;
+  }
+  .end-footer> .footer-bottom {
+    display: block;
+    color: #807f7f;
+    font-size: 15px;
+    margin: 20px;
+  }
+  .end-footer .footer-bottom .bottom-left{
+    width: 50%;
+    display: inline-block;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 30px 0;
+  }
+  
+  .end-footer .footer-bottom .bottom-right{
+    width: 50%;
+    float: right;
+    
+    height: 250px;
+    display: flex;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+  }
+    
+  .footer-bottom .bottom-left a:first-child{
+    color: #1976d2;
+    font-size: 1.5rem;
+  }
+  .footer-bottom .tagline {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.4;
+    display: block;
+    margin-top: 10px;
+  }
+  .footer-bottom .footer-list li {
+    list-style: none;
+  } 
+  .footer-bottom ul.footer-list{
+    padding: 0;
+    margin-top: 20px;
+  }
+  .footer-bottom .icon{
+    margin: 15px 0;
+    color: #1976d2;
+  }
+  .footer-bottom .footer-list a{
+    margin: 25px;
+    color: #807f7f;
+  } 
+  .end-footer .footer-bottom .footer-center .footer-icons a.circle{
+    border-radius: 60px;
+    width: 40px;
+    height: 40px;
+    line-height: 43px;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    background-color: #bbbaba;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+  }
+  .end-footer .footer-bottom .footer-center .footer-icons a.circle i{
+    color: #fff;
+    font-size: 18px;
+  }
+  .end-footer .footer-bottom .footer-center .footer-icons .facebook:hover{
+    background-color: #3b5998;
+  }
+  .end-footer .footer-bottom .footer-center .footer-icons .twitter:hover{
+    background-color: #1DA1F2;
+  }
+  .end-footer .footer-bottom .footer-center .footer-icons .linkedin:hover{
+    background-color: #0e76a8;
+  }
+  .end-footer .footer-bottom .footer-center p{
+    font-size: 10px;
+    color: #bbbaba;
+  }
+/*  When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
+    Show the link that contains should open and close the topnav (.icon) */
+    @media screen and (max-width: 650px) {
+      .topnav a, .search-box{
+        display: none;
+      }
+      .topnav a.nav-toggle {
+        display: block;
+        float: right;
+      }
+      .topnav a.nav-toggle:hover{
+        color: rgb(211, 207, 207);
+      }
+      /* Change the color of links on hover */
+    .nav-menu a:hover {
+      border: 2px solid rgb(214, 213, 213) ;
+      border-radius: 15px;
+    }
+    
+    .columnCards> .cards{
+      display: block;
+    }
+    .columnCards > .cards> .column {
+      display: block;
+      width: 95%; 
+      margin: 1rem auto;
+      float: none;
+    }
+    #middleCard{
+      margin: 1rem auto;
+    }
+    .container .post{
+      border: none;
+      width: 95%;
+    }
+
+    .about .img-right-post{
+        display: block;
+    }
+    .about .img-right-post .right-img{
+      min-width: 100%;
+    }
+
+    .end-footer .footer-bottom .bottom-left{
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+    .end-footer .footer-bottom .bottom-right{
+      width: 100%;
+      float: none;
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+    
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+  This class makes the topnav look good on small screens (display the links vertically insteadof horizontally) */
+    @media screen and (max-width: 650px) {
+      .topnav.responsive {display: inline;}
+      .topnav.responsive a.nav-toggle {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }  
+      .topnav.responsive a {
+        float: none;
+        position: relative;
+        display: block;
+        text-align: left;
+      }
+    }
+  

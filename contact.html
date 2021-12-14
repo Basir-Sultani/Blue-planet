@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blue Planet</title>
+    <link rel="stylesheet" href="app.css">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- My navbar -->
+    <div class="nv-container bg-img-contact">
+        <nav class="topnav" id="myTopnav">
+            <a class="navbar-brand" href="index.html">Blue Planet</a>
+            <div class="nav-menu">
+                <a href="#" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contecat</a>
+            </div>
+            <a class="nav-toggle" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <div class="bottom-center-toggler">
+            <a href="#contact" class="go-down">
+                <i class="fa fa-angle-double-down" data-toggle="tooltip" data-placement="center"
+                    title-data-original-title="Go To Contact">
+                </i>
+            </a>
+        </div>
+        
+    </div>
+
+    <section id="contact" class="contact bg-image">
+        <div class="container">
+             <form id="message" action="messageServlet" method="post">
+                 <h3>Write to Us!</h3>
+                 <div class="labeler">
+                    <input type="text" name="user_name" placeholder="Enter your Name">
+                 </div>
+                 <div class="labeler">
+                    <input type="text" name="email" placeholder="Enter your email address">
+                 </div>
+                 <div class="labeler">
+                    <textarea name="message" rows="8" placeholder="Enter your Message"></textarea>
+                 </div>
+                 <div class="labeler">
+                     <input type="submit">
+                 </div>
+             </form>
+        </div>  
+    </section>
+
+
+    <footer class="end-footer">
+        <div class="footer-top">
+            <div class="pull-right">
+                <a href="#top">
+                    <i class="fa fa-angle-up" data-toggle="tooltip" data-placement="left"
+                        title-data-original-title="Go To Top">
+                    </i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <div class="bottom-left">
+                <a href="#">Blue Planet</a>
+                <br>
+                <span class="tagline">
+                    400 East Vine Street, GK 301
+                    <br>
+                    Delhi, india 40507
+                </span>
+                <ul class="footer-list">
+                    <li class="icon phone">
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:9643397897">964.339.7897</a>
+                    </li>
+                    <li class="icon mail">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:baseersultani@yahoo.com">
+                            baseersultani@yahoo.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-right">
+
+                <div class="footer-center">
+                    <div class="footer-icons">
+                        <a target="_blank" href="http://www.facebook.com" class="circle facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a target="_blank" href="http://twitter.com" class="circle twitter"> 
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com" class="circle linkedin">
+                            <i class="fa fa-linkedin"></i> 
+                        </a>
+                    </div>
+                    <p>
+                        © 2021 Blue Planet, Inc. All Rights Reserved.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
