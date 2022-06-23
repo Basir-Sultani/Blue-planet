@@ -1,7 +1,7 @@
 # Blue Planet
 
 This is a website, I started building it, having our beautiful planet in mind, that is to spread awareness about climate change, sharing information regarding conflicts, wars and their consequences such as hunger, inequality, displacement of millions of individuals ...
-Everyone is welcome to contribute on this project.
+Everyone is welcome to contribute and use it.
 
 ## Getting Started
 
