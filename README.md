@@ -1,3 +1,2 @@
-# Blue-planet-Website-
+# Blue-planet
 Blue planet is a cool responsive website.
-Thank you for visiting!!
